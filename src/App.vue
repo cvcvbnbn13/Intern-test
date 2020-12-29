@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header></Header>
+    <Main></Main>
+    <Subscr></Subscr>
+    <QaArea></QaArea>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from '@/views/Header.vue'
+import Main from '@/views/Main.vue'
+import Subscr from '@/views/Subscr.vue'
+import QaArea from '@/views/QaArea.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Main,
+    Subscr,
+    QaArea
   }
 }
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 微軟正黑體, Helvetica, Arial, sans-serif;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  /* color: #2c3e50;
+  margin-top: 60px; */
 }
 </style>
